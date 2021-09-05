@@ -87,6 +87,6 @@ app.use(function(err, req, res, next) {
   console.error(err.stack)
   res.status(500).send(`
     <p>Something Broke! Please go back and try again.</p>
-    <a href="http://localhost:3030">Go back to home page</a>
+    <a href="https://obscure-sands-38275.herokuapp.com/">Go back to home page</a>
     `)
 })
