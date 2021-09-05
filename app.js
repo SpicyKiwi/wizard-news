@@ -4,7 +4,7 @@ const volleyball = require('volleyball')
 
 const postBank = require('./postBank')
 
-const PORT = 1337;
+const PORT = 3030;
 
 app.listen(PORT, () => {
   console.log(`App listening in port ${PORT}`);
@@ -85,5 +85,8 @@ app.get('/posts/:id', (req, res) => {
 
 app.use(function(err, req, res, next) {
   console.error(err.stack)
-  res.status(500).send('Something Broke! Please go back and try again.')
+  res.status(500).send(`
+    <p>Something Broke! Please go back and try again.</p>
+    <a href="http://localhost:3030">Go back to home page</a>
+    `)
 })
