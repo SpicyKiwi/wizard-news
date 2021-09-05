@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "heroku": "^7.59.0",
     "morgan": "^1.10.0",
     "volleyball": "^1.5.1"
   }
