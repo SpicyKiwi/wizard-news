@@ -4,7 +4,7 @@ const volleyball = require('volleyball')
 
 const postBank = require('./postBank')
 
-const PORT = 3030;
+const { PORT = 3030 } = process.env;
 
 app.listen(PORT, () => {
   console.log(`App listening in port ${PORT}`);
